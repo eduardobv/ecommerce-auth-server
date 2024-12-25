@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ecommerce-auth-server
+  config:
+    import: "optional:configserver:http://localhost:8888"
+
+server:
+  port: 9000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
